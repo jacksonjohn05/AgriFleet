@@ -1,0 +1,79 @@
+/* Main container styles */
+.predictions-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.predictions-section h2 {
+  text-align: center;
+  color: #d1d1d1;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Grid layout for the cards */
+.predictions-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* Individual card styles */
+.prediction-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.prediction-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Card header styles */
+.prediction-card h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #eee;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.prediction-card h3 i {
+  font-size: 1.2rem;
+}
+
+/* Card content styles */
+.prediction-content {
+  margin-top: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .predictions-container {
+    grid-template-columns: 1fr;
+  }
+
+  .prediction-card {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .predictions-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .prediction-card h3 {
+    font-size: 1.2rem;
+  }
+}

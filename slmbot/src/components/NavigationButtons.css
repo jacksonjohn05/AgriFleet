@@ -1,0 +1,35 @@
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 0 1rem;
+}
+
+.nav-button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.prev-button {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.prev-button:hover {
+  background-color: #e0e0e0;
+}
+
+.next-button {
+  background-color: #3498db;
+  color: white;
+  border: 1px solid #2980b9;
+}
+
+.next-button:hover {
+  background-color: #2980b9;
+}
